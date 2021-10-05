@@ -1,0 +1,24 @@
+Course computing = new Course("BT1CWD1", "BSc Computing & Web");
+computing.print();
+--------------------------------------
+    App211: Course & Module Details   
+--------------------------------------
+
+
+Course Code : BT1CWD1
+Title       : BSc Computing & Web
+
+Student Kyle = new Student("Kyle", 22137070);
+Kyle.print();
+Student ID: 22137070
+Name      : Kyle
+Kyle.enroll(computing);
+Kyle.printCourse();
+--------------------------------------
+    App211: Course & Module Details   
+--------------------------------------
+
+
+Course Code : BT1CWD1
+Title       : BSc Computing & Web
+

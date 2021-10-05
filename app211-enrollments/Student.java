@@ -1,24 +1,23 @@
 /**
- * The Student class contains essential information that identifies 
- * a student at BNU.  The class also contains information 
- * concerning the course the student is currently enrolled on
- * 
- * @author Michael Kölling and David Barnes
- * @modified by Derek Peacock and Nicholas Day
- * @version 2021:08:15
- */
+* This class allows users to create a student object and contains
+* methods that allows them to enroll a student to a course, print a student's information and
+* the course the student is enrolled on.
+* 
+* @author  Kyle Whynn
+* @version 1.0
+*/
 public class Student
 {
-    // A unique 8 digit BNU identifier
+    // The student id
     private int id;
-    // the student's full name
+    // The student's full name
     private String name;
     // The course the student is enrolled on
     private Course course;
     
     /**
-     * Create a new student with a given name and ID number.
-     */
+    * Input for student name and ID number.
+    */
     public Student(String name, int id)
     {
         this.name = name;
@@ -26,34 +25,26 @@ public class Student
     }
 
     /**
-     * Return the full name of this student.
-     */
-    public String getName()
-    {
-        return name;
-    }
-
-     /**
-     * Return the student ID of this student.
-     */
-    public int getID()
-    {
-        return id;
-    }
-
-    public void enrol(Course course)
+    * Enrolls student to a course.
+    */
+    public void enroll(Course course)
     {
         this.course = course;
     }
     
     /**
-     * Print the student's name and ID number to the output terminal.
-     */
+    * Print the student's name and ID number to the terminal.
+    */
     public void print()
     {
-        System.out.println(" Student ID: " + id + " Name: " + name);
+        System.out.println("Student ID: " + id );
+        System.out.println("Name      : " + name);
+        
     }
     
+    /**
+    * Print the course the student is enrolled on to the terminal.
+    */
     public void printCourse()
     {
         course.print();
