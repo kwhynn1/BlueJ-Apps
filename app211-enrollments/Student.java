@@ -1,22 +1,22 @@
 /**
-* This class allows users to create a student object and contains
-* methods that allows them to enroll a student to a course, print a student's information and
-* the course the student is enrolled on.
-* 
-* @author  Kyle Whynn
-* @version 1.0
-*/
+ * This class contains information about
+ * students. Methods allow for enrollment and
+ * printing to terminal.
+ * 
+ * @author  Kyle Whynn
+ * @version 1.0
+ */
 public class Student
 {
-    // The student id
+    // ID number
     private int id;
-    // The student's full name
+    // Student Name
     private String name;
-    // The course the student is enrolled on
+    // Course information
     private Course course;
     
     /**
-    * Input for student name and ID number.
+    * Create student object with a name and ID number.
     */
     public Student(String name, int id)
     {
@@ -33,17 +33,28 @@ public class Student
     }
     
     /**
-    * Print the student's name and ID number to the terminal.
+    * Print heading to the terminal.
     */
-    public void print()
+    private void printHeading()
     {
-        System.out.println("Student ID: " + id );
-        System.out.println("Name      : " + name);
-        
+        System.out.println(" --------------------------------");
+        System.out.println("           Student Details       ");
+        System.out.println(" --------------------------------");
+        System.out.println();
     }
     
     /**
-    * Print the course the student is enrolled on to the terminal.
+    * Print the student's name and ID number to terminal.
+    */
+    public void print()
+    {
+        printHeading();
+        System.out.println("Student ID: " + id);
+        System.out.println("Name      : " + name);
+    }
+    
+    /**
+    * Print course that the student is enrolled on.
     */
     public void printCourse()
     {

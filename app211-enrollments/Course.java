@@ -1,59 +1,50 @@
 import java.util.*;
 
 /**
- * This class contains information about an undergraduate course
- * at BNU together with a list of student who are enrolled
+ * This class contains information about the different courses. Methods
+ * allow for printing to the terminal screen.
  *
  * @author  Kyle Whynn
  * @version 1.0 
  */
 public class Course
 {
-    // A code for the course. 
+    // Code for course
     private String code;
-    // The title of the course.
+    // Course title
     private String title;
-    // The module the student is enrolled on.
-    private Module module;
     
     /**
-    * Input For course code and title. 
+    * Create a course object with course code and title. 
     */
     public Course(String code, String title)
     {
-        this.code  = code;
+        this.code = code;
         this.title = title;
-    }
-      
-    /**
-    * Links the course to a module.
-    */
-    public void eroll(Module module)
-    {
-        this.module = module;
     }
 
     /**
-    * Print a heading to the terminal above the course information.
+    * Print heading to the terminal.
     */
     private void printHeading()
-    {      
-        System.out.println("--------------------------------------");
-        System.out.println("    App211: Course & Module Details   ");
-        System.out.println("--------------------------------------");
+    {
+        System.out.println(" --------------------------------");
+        System.out.println("           Course Details        ");
+        System.out.println(" --------------------------------");
         System.out.println();
     }
     
     /**
-    * Print the details of the course to the terminal.
+    * Print the details of the course
     */
     public void print()
     {
         printHeading();
-        System.out.println();
-        System.out.println("Course Code : " + code);
-        System.out.println("Title       : " + title);
+        
+        System.out.println(" Course Code : " + code  );
+        System.out.println(" Course Title: " +  title);
         System.out.println();
     }
     
+
 }
