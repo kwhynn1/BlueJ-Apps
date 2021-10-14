@@ -13,6 +13,8 @@ public class Course
     private String code;
     // Course title
     private String title;
+    // Module information
+    private Module module;
     
     /**
     * Create a course object with course code and title. 
@@ -44,7 +46,15 @@ public class Course
         System.out.println(" Course Code : " + code  );
         System.out.println(" Course Title: " +  title);
         System.out.println();
+        module.print();
     }
     
+    /***
+    * Adds module to course
+    */ 
+    public void addModule(Module module)
+    {
+        this.module = module;
+    }
 
 }

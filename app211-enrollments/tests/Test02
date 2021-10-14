@@ -1,0 +1,47 @@
+Module webdev = new Module( "CO452", "Programming Concepts");
+webdev.print();
+ --------------------------------
+           Module Details        
+ --------------------------------
+
+Module Code : CO452
+Module Title: Programming Concepts
+Credit Value: 0
+
+webdev.SetCreditvalue(15);
+webdev.print();
+ --------------------------------
+           Module Details        
+ --------------------------------
+
+Module Code : CO452
+Module Title: Programming Concepts
+Credit Value: 15
+
+Course computing = new Course("BT1CWD1", "BSc Computing & Web");
+computing.print();
+ --------------------------------
+           Course Details        
+ --------------------------------
+
+ Course Code : BT1CWD1
+ Course Title: BSc Computing & Web
+
+    Exception occurred.
+computing.addModule(webdev);
+computing.print();
+ --------------------------------
+           Course Details        
+ --------------------------------
+
+ Course Code : BT1CWD1
+ Course Title: BSc Computing & Web
+
+ --------------------------------
+           Module Details        
+ --------------------------------
+
+Module Code : CO452
+Module Title: Programming Concepts
+Credit Value: 15
+
