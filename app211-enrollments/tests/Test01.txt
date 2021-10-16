@@ -7,16 +7,16 @@ computing.print();
  Course Code : BT1CWD1
  Course Title: BSc Computing & Web
 
-Student Kyle = new Student("Kyle Whynn", 22137070);
-Kyle.print();
+Student kyle = new Student("Kyle Whynn", 22137070);
+kyle.print();
  --------------------------------
            Student Details       
  --------------------------------
 
 Student ID: 22137070
 Name      : Kyle Whynn
-Kyle.enroll(computing);
-Kyle.printCourse();
+kyle.enroll(computing);
+kyle.printCourse();
  --------------------------------
            Course Details        
  --------------------------------

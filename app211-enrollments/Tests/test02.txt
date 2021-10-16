@@ -1,5 +1,5 @@
-Module webdev = new Module( "CO452", "Programming Concepts");
-webdev.print();
+Module co452 = new Module("CO452", "Programming Concepts");
+co452.print();
  --------------------------------
            Module Details        
  --------------------------------
@@ -8,8 +8,8 @@ Module Code : CO452
 Module Title: Programming Concepts
 Credit Value: 0
 
-webdev.SetCreditvalue(15);
-webdev.print();
+co452.SetCreditvalue(15);
+co452.print();
  --------------------------------
            Module Details        
  --------------------------------
@@ -28,7 +28,7 @@ computing.print();
  Course Title: BSc Computing & Web
 
     Exception occurred.
-computing.addModule(webdev);
+computing.addModule(co452);
 computing.print();
  --------------------------------
            Course Details        

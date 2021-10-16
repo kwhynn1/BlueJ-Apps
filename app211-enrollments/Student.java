@@ -1,18 +1,20 @@
 /**
- * This class contains information about
- * students. Methods allow for enrollment and
- * printing to terminal.
- * 
- * @author  Kyle Whynn
- * @version 1.0
- */
+* This class contains information about
+* students. Methods allow for enrollment and
+* printing to terminal.
+* 
+* @author  Kyle Whynn
+* @version 1.0
+*/
+
+
 public class Student
 {
     // ID number
     private int id;
     // Student Name
     private String name;
-    // Course information
+    // Course object
     private Course course;
     
     /**
@@ -25,7 +27,7 @@ public class Student
     }
 
     /**
-    * Enrolls student to a course.
+    * Enrolls student object to a course object.
     */
     public void enroll(Course course)
     {
@@ -54,7 +56,7 @@ public class Student
     }
     
     /**
-    * Print course that the student is enrolled on.
+    * Print course that the student object is enrolled on.
     */
     public void printCourse()
     {
